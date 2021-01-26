@@ -9,6 +9,7 @@
 body{
     background-color: var(--bgcolor);
     overflow-x: hidden;
+    font-family: 'Nunito Regular', sans-serif;
 }
 ul, li{
     margin: 0;
@@ -28,8 +29,33 @@ img{
     width: 100%;
     height: auto;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Press Start 2P', cursive;
+}
+b, strong{
+    font-family: 'Nunito Bold', sans-serif;
+}
+i, em{
+    font-family: 'Nunito Italic', sans-serif;
+}
 
 /* fonts */
+@font-face{
+    font-family: 'Press Start 2P';
+    src: url(../assets/fonts/PressStart2P-Regular.ttf);
+}
+@font-face{
+    font-family: 'Nunito Regular';
+    src: url(../assets/fonts/Nunito-Regular.ttf);
+}
+@font-face{
+    font-family: 'Nunito Bold';
+    src: url(../assets/fonts/Nunito-Bold.ttf);
+}
+@font-face{
+    font-family: 'Nunito Italic';
+    src: url(../assets/fonts/Nunito-Italic.ttf);
+}
 
 /* mobyle styles */
 
