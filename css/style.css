@@ -1,75 +1,105 @@
 /* variables */
-:root{
+:root {
     --primary: #2E291E;
     --secondary: #6BBF44;
     --bgcolor: #DFDCCF;
 }
 
 /* base styles */
-body{
+body {
     background-color: var(--bgcolor);
     overflow-x: hidden;
     font-family: 'Nunito Regular', sans-serif;
 }
-ul, li{
+
+ul,
+li {
     margin: 0;
     padding: 0;
 }
-li{
+
+li {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--secondary);
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-img{
+
+img {
     width: 100%;
     height: auto;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Press Start 2P', cursive;
 }
-b, strong{
+
+b,
+strong {
     font-family: 'Nunito Bold', sans-serif;
 }
-i, em{
+
+i,
+em {
     font-family: 'Nunito Italic', sans-serif;
 }
 
 /* fonts */
-@font-face{
+@font-face {
     font-family: 'Press Start 2P';
     src: url(../assets/fonts/PressStart2P-Regular.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: 'Nunito Regular';
     src: url(../assets/fonts/Nunito-Regular.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: 'Nunito Bold';
     src: url(../assets/fonts/Nunito-Bold.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: 'Nunito Italic';
     src: url(../assets/fonts/Nunito-Italic.ttf);
 }
 
 /* mobyle styles */
+/* header */
+.header {
+    display: flex;
+    background-color: var(--primary);
+    color: var(--bgcolor);
+    align-items: center;
+}
+
+.logo-wrap {
+    height: 50px;
+    width: 50px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+}
 
 /* small tablet styles */
-@media screen and (min-width: 620px){
-
-}
+@media screen and (min-width: 620px) {}
 
 /* large tablets & laptops style */
-@media screen and (min-width: 960px){
-
-}
+@media screen and (min-width: 960px) {}
 
 /* desktop styles */
-@media screen and (min-width: 1200px){
-
-}
+@media screen and (min-width: 1200px) {}
