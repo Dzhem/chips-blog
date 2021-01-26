@@ -1,6 +1,29 @@
 /* variables */
+:root{
+    --primary: #2E291E;
+    --secondary: #6BBF44;
+    --bgcolor: #DFDCCF;
+}
 
 /* base styles */
+body{
+    background-color: var(--bgcolor);
+    overflow-x: hidden;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+a:hover{
+    text-decoration: underline;
+}
 img{
     width: 100%;
     height: auto;
