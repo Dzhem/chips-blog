@@ -3,6 +3,8 @@
     --primary: #2E291E;
     --secondary: #6BBF44;
     --bgcolor: #DFDCCF;
+    --menu-height: 50px;
+	--menu-width: 50px;
 }
 
 /* base styles */
@@ -55,6 +57,11 @@ em {
     font-family: 'Nunito Italic', sans-serif;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
 /* fonts */
 @font-face {
     font-family: 'Press Start 2P';
@@ -79,20 +86,109 @@ em {
 /* mobyle styles */
 /* header */
 .header {
-    display: flex;
     background-color: var(--primary);
     color: var(--bgcolor);
-    align-items: center;
+    position: relative;
 }
 
 .logo-wrap {
-    height: 50px;
-    width: 50px;
-}
-
-.navigation ul {
+    min-width: 40px;
+    max-width: 55px;
+    grid-column: 1/3;
     display: flex;
     align-items: center;
+    margin: 5%;
+}
+
+.site-title {
+    grid-column: 3/12;
+    text-align: center;
+}
+
+.navigation {
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    background-color: var(--primary);
+    font-family: 'Nunito Bold', sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .2s ease-out;
+}
+
+.nav-open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.navigation ul li {
+    text-align: center;
+    margin: 1% 0;
+}
+
+.menu-button {
+    grid-column: 12/13;
+    margin: 5%;
+	width: var(--menu-width);
+	height: var(--menu-height);
+	background-color: var(--bgcolor);
+	position: relative;
+	cursor: pointer;
+	transition: box-shadow .1s ease-in;
+}
+
+.pixel {
+	background-color: var(--secondary);
+	height: calc(var(--menu-height) / 9);
+	width: calc(var(--menu-width) / 9);
+	position: absolute;
+	transition: all .5s ease-in;
+}
+
+.pixel-1, .pixel-2, .pixel-3 {
+	top: calc((var(--menu-width) / 9) * 2);
+}
+
+.pixel-4, .pixel-5, .pixel-6 {
+	top: calc((var(--menu-width) / 9) * 4);
+}
+
+.pixel-7, .pixel-8, .pixel-9 {
+	top: calc((var(--menu-width) / 9) * 6);
+}
+
+.pixel-1, .pixel-4, .pixel-7 {
+	left: calc((var(--menu-height) / 9) * 2);
+}
+
+.pixel-2, .pixel-5, .pixel-8 {
+	left: calc((var(--menu-height) / 9) * 4);
+}
+
+.pixel-3, .pixel-6, .pixel-9 {
+	left: calc((var(--menu-height) / 9) * 6);
+}
+
+.active .pixel-2 {
+	top: calc((var(--menu-width) / 9) * 3);
+	left: calc((var(--menu-height) / 9) * 5);
+}
+
+.active .pixel-6 {
+	top: calc((var(--menu-width) / 9) * 5);
+	left: calc((var(--menu-height) / 9) * 5);
+}
+
+.active .pixel-8 {
+	top: calc((var(--menu-width) / 9) * 5);
+	left: calc((var(--menu-height) / 9) * 3);
+}
+
+.active .pixel-4 {
+	top: calc((var(--menu-width) / 9) * 3);
+	left: calc((var(--menu-height) / 9) * 3);
 }
 
 /* small tablet styles */
