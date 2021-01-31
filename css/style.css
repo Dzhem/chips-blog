@@ -134,6 +134,10 @@ em {
     color: var(--primary);
 }
 
+.navigation ul li:hover a {
+    color: var(--primary);
+}
+
 .navigation ul li a {
     display: block;
 }
