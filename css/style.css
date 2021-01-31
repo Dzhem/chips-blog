@@ -109,16 +109,15 @@ em {
 .navigation {
     position: absolute;
     top: 100%;
-    width: 100vw;
     background-color: var(--primary);
     font-family: 'Nunito Bold', sans-serif;
     visibility: hidden;
     opacity: 0;
     transform: translateX(100%);
-    transition: .2s ease-out;
 }
 
 .nav-open {
+    width: 100vw;
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
