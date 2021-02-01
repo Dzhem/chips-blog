@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="header grid">
+    <header class="site-header">
         <div class="logo-wrap">
             <img class="logo" src="assets/logo.jpg" alt="Лого сайта">
         </div>
@@ -24,7 +26,7 @@
             <div class="pixel pixel-8"></div>
             <div class="pixel pixel-9"></div>
         </div>
-        <nav class="navigation">
+        <nav>
             <ul>
                 <li><a href="#">Категории</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -33,30 +35,64 @@
             </ul>
         </nav>
     </header>
-    <main class="content grid">
-        <div class="post">
-            <span class="post-date">10.01.2021</span>
-            <h2 class="post-title">Post title</h2>
-            <span class="post-category">games</span>
-            <span class="post-author">Vladimir Kartashov</span>
+    <main class="content">
+        <article class="post">
+            <header class="post-header">
+                <span class="post-date">10.01.2021</span>
+                <h1 class="post-title"><a href="#" class="post-link">Post title</a></h1>
+                <span class="post-category"><a href="#" class="post-link">games</a></span>
+                <span class="post-author">Vladimir Kartashov</span>
+            </header>
             <div class="post-content">
-                <p>Lorem ipsum <b>Lorem, ipsum dolor.</b>dolor sit amet, consectetur adipisicing elit. <strong>Lorem, ipsum.</strong>Molestiae nulla suscipit dolores eum cum odio. Non assumenda fugiat earum at repellendus nulla error quidem unde inventore doloribus eum corrupti soluta commodi nisi, quia quisquam pariatur <strong><em>Lorem, ipsum dolor.</em></strong> placeat velit explicabo molestias iure veritatis in? Voluptatum incidunt repudiandae est. Dolore reprehenderit asperiores qui tenetur similique unde pariatur! Nulla vero illo adipisci aperiam alias ut velit ea, fugit voluptates architecto? Omnis accusantium in sed quisquam corrupti illo, repellat nesciunt, saepe neque ullam maiores ut, earum veniam eos enim. Itaque, ab perferendis. Culpa, temporibus quod. Et temporibus consectetur, libero ea ipsa facilis illo earum similique.</p>
+                <p>Lorem ipsum <b>Lorem, ipsum dolor.</b>dolor sit amet, consectetur adipisicing elit. <strong>Lorem,
+                        ipsum.</strong>Molestiae nulla suscipit dolores eum cum odio. Non assumenda fugiat earum at
+                    repellendus nulla error quidem unde inventore doloribus eum corrupti soluta commodi nisi, quia
+                    quisquam pariatur <strong><em>Lorem, ipsum dolor.</em></strong> placeat velit explicabo molestias
+                    iure veritatis in? Voluptatum incidunt repudiandae est. Dolore reprehenderit asperiores qui tenetur
+                    similique unde pariatur! Nulla vero illo adipisci aperiam alias ut velit ea, fugit voluptates
+                    architecto? Omnis accusantium in sed quisquam corrupti illo, repellat nesciunt, saepe neque ullam
+                    maiores ut, earum veniam eos enim. Itaque, ab perferendis. Culpa, temporibus quod. Et temporibus
+                    consectetur, libero ea ipsa facilis illo earum similique.</p>
             </div>
-        </div>
-        <div class="post">
-            <span class="post-date">01.01.2021</span>
-            <h2 class="post-title">Post title</h2>
-            <span class="post-category">live</span>
-            <span class="post-author">Татьяна Карташова</span>
+        </article>
+        <article class="post">
+            <header class="post-header">
+                <span class="post-date">01.01.2021</span>
+                <h1 class="post-title"><a href="#" class="post-link">Post title</a></h1>
+                <span class="post-category"><a href="#" class="post-link">live</a></span>
+                <span class="post-author">Татьяна Карташова</span>
+            </header>
             <div class="post-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i>Lorem, ipsum dolor.</i>Autem exercitationem facere saepe omnis soluta ipsa vel distinctio impedit <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis in eum impedit fugit soluta quaerat inventore excepturi corrupti, et quis voluptatum repellendus voluptate, similique, vel eius perspiciatis iste harum vero?</em> possimus cum vero earum, voluptatibus in sed ullam tempora non? Laboriosam, perspiciatis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i>Lorem, ipsum dolor.</i>Autem
+                    exercitationem facere saepe omnis soluta ipsa vel distinctio impedit <em>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Corporis in eum impedit fugit soluta quaerat inventore excepturi
+                        corrupti, et quis voluptatum repellendus voluptate, similique, vel eius perspiciatis iste harum
+                        vero?</em> possimus cum vero earum, voluptatibus in sed ullam tempora non? Laboriosam,
+                    perspiciatis.</p>
             </div>
-        </div>
+        </article>
+        <article class="post">
+            <header class="post-header">
+                <span class="post-date">01.01.2021</span>
+                <h1 class="post-title"><a href="#" class="post-link">Post title</a></h1>
+                <span class="post-category"><a href="#" class="post-link">live</a></span>
+                <span class="post-author">Татьяна Карташова</span>
+            </header>
+            <div class="post-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i>Lorem, ipsum dolor.</i>Autem
+                    exercitationem facere saepe omnis soluta ipsa vel distinctio impedit <em>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Corporis in eum impedit fugit soluta quaerat inventore excepturi
+                        corrupti, et quis voluptatum repellendus voluptate, similique, vel eius perspiciatis iste harum
+                        vero?</em> possimus cum vero earum, voluptatibus in sed ullam tempora non? Laboriosam,
+                    perspiciatis.</p>
+            </div>
+        </article>
     </main>
-    <footer class="footer grid">
+    <footer class="site-footer">
         <div class="copyright">&copy; Chips Blog. Владимир Карташов. 2021</div>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector('.menu-button');
-const menuNav = document.querySelector('.navigation');
+const menuNav = document.querySelector('nav');
 menuBtn.addEventListener('click', () => {
 	if (menuBtn.classList.contains('active')) {
         menuBtn.classList.remove('active');
