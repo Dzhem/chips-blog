@@ -246,6 +246,10 @@ main {
     margin: 0 0 5px 0;
 }
 
+.post-category .post-link {
+    font-family: 'Nunito Bold', sans-serif;
+}
+
 /* Footer styles */
 .site-footer {
     padding: 10px;
