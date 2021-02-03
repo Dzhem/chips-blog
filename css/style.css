@@ -10,6 +10,7 @@
 /* base styles */
 :root {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *, *::before, *::after {
