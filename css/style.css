@@ -120,10 +120,10 @@ nav {
     visibility: hidden;
     opacity: 0;
     transform: translateX(100%);
+    width: 100vw;
 }
 
 .nav-open {
-    width: 100vw;
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
@@ -258,6 +258,10 @@ main {
 /* Post page */
 .post-page .post-header {
     margin-bottom: 15px;
+}
+
+.like-btn {
+    cursor: pointer;
 }
 
 .back-btn {
