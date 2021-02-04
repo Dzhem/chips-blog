@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    position: relative;
 }
 
 ul,
@@ -95,11 +96,11 @@ em {
 .site-header {
     background-color: var(--primary);
     color: var(--bgcolor);
-    position: relative;
     justify-content: space-around;
     align-items: center;
     display: flex;
     padding: 10px;
+    height: 86px;
 }
 
 .logo-wrap {
@@ -114,7 +115,8 @@ em {
 
 nav {
     position: absolute;
-    top: 100%;
+    top: 86px;
+    left: 0;
     background-color: var(--primary);
     font-family: 'Nunito Bold', sans-serif;
     visibility: hidden;
@@ -296,10 +298,55 @@ main {
 }
 
 /* small tablet styles */
-@media screen and (min-width: 620px) {}
+@media screen and (min-width: 620px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .site-header::after {
+        display: block;
+        content: '';
+        width: 100vw;
+        background-color: var(--primary);
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        height: 86px;
+    }
+
+    .site-header {
+        justify-content: space-between;
+    }
+
+    .post {
+        margin: 10px 0 30px 0;
+    }
+
+    .post-page .post {
+        box-shadow: none;
+    }
+}
 
 /* large tablets & laptops style */
-@media screen and (min-width: 960px) {}
+@media screen and (min-width: 960px) {
+    .wrapper {
+        width: 65%;
+    }
+    .content:not(.post-page) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content:not(.post-page) .post {
+        width: 48%;
+    }
+}
 
 /* desktop styles */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 55%;
+    }
+}
