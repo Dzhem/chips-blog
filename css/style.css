@@ -359,7 +359,7 @@ main {
 
     .content:not(.post-page) .post {
         width: 48%;
-        height: 360px;
+        min-height: 360px;
         overflow: hidden;
         position: relative;
     }
