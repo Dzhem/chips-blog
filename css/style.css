@@ -350,6 +350,10 @@ main {
         justify-content: space-evenly;
     }
 
+    nav ul li {
+        padding: 1% 1%;
+    }
+
     .post {
         margin: 10px 0 30px 0;
     }
