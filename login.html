@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Blog</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-wrap">
+                    <img class="logo" src="assets/logo.jpg" alt="Лого сайта">
+                </div>
+                <h1 class="site-title">Chips Blog</h1>
+                <div class="menu-button">
+                    <div class="pixel pixel-1"></div>
+                    <div class="pixel pixel-2"></div>
+                    <div class="pixel pixel-3"></div>
+                    <div class="pixel pixel-4"></div>
+                    <div class="pixel pixel-5"></div>
+                    <div class="pixel pixel-6"></div>
+                    <div class="pixel pixel-7"></div>
+                    <div class="pixel pixel-8"></div>
+                    <div class="pixel pixel-9"></div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Категории</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content login-page">
+        <div class="container">
+            <h2>Login</h2>
+
+                <form method="POST" _lpchecked="1">
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                        value="WVUrZqZZR06wWS30Pzb0A04j5umu02OCCso9Ncfrkqa4NfvcJNjdPfkgz4mnnVwT">
+                    <p><label for="id_username">Имя пользователя:</label>
+                        <input type="text" name="username"
+                            autofocus="" autocapitalize="none" autocomplete="off" maxlength="150" required=""
+                            id="id_username">
+                    </p>
+                    <p><label for="id_password">Пароль:</label>
+                        <input type="password" name="password"
+                            autocomplete="off" required="" id="id_password">
+                    </p>
+                    <button class="btn btn-success">Login</button>
+                </form>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="copyright">&copy; Chips Blog. Владимир Карташов. 2021</div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

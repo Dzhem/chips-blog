@@ -317,6 +317,54 @@ main {
     grid-row: 3;
 }
 
+/* Login page */
+.login-page .container {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+.login-page form {
+    max-width: 320px;
+    margin: 33px auto 0;
+
+}
+
+.login-page label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.login-page input {
+    background-color: var(--bgcolor);
+    border: 2px solid var(--primary);
+    line-height: 2em;
+}
+
+.login-page input:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: var(--bgcolor);
+    border-radius: 0;
+    border: 2px solid var(--primary);
+    font-family: 'Press Start 2P';
+    color: var(--secondary);
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 0px 4px 1px 0px rgba(46, 41, 30, 0.2);
+    -moz-box-shadow: 0px 4px 1px 0px rgba(46, 41, 30, 0.2);
+    box-shadow: 0px 4px 1px 0px rgba(46, 41, 30, 0.2);
+    transition: box-shadow .2s ease;
+}
+
+.btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
     .container {
@@ -372,21 +420,21 @@ main {
         width: 65%;
     }
 
-    .content:not(.post-page) .container {
+    .post-list .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
     }
 
-    .content:not(.post-page) .post {
+    .post-list .post {
         width: 48%;
         max-height: 360px;
         overflow: hidden;
         position: relative;
     }
 
-    .content:not(.post-page) .post::before {
+    .post-list .post::before {
         display: block;
         content: '';
         width: 100%;
