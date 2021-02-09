@@ -114,6 +114,12 @@ em {
     max-width: 55px;
 }
 
+.logo-wrap a,
+.site-title a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .site-title {
     text-align: center;
     margin: 0;
