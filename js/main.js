@@ -24,3 +24,20 @@ if (likeBtn !== null) {
         }
     })
 }
+
+const dropdown = document.querySelectorAll('.dropdown');
+
+function openDropdownMenu(event) {
+    const ddMenu = event.target.querySelector('.dropdown-menu');
+    ddMenu.classList.add('open');
+}
+
+function closeDropdownMenu(event) {
+    const ddMenu = event.target.querySelector('.dropdown-menu');
+    ddMenu.classList.remove('open');
+}
+
+dropdown.forEach(item => {
+    item.addEventListener('mouseenter', openDropdownMenu);
+    item.addEventListener('mouseleave', closeDropdownMenu);
+})
