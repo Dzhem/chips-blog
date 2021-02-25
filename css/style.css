@@ -324,31 +324,45 @@ main {
 }
 
 /* Login page */
-.login-page .container {
+.login-page .container,
+.reg-page .container {
     /* display: flex;
     justify-content: center; */
     text-align: center;
 }
 
-.login-page form {
+.login-page form,
+.reg-page form {
     max-width: 320px;
     margin: 33px auto 0;
-
 }
 
-.login-page label {
+.login-page label,
+.reg-page label {
     display: block;
     margin-bottom: 12px;
 }
 
-.login-page input {
+.login-page input,
+.reg-page input {
     background-color: var(--bgcolor);
     border: 2px solid var(--primary);
     line-height: 2em;
+    width: 100%;
 }
 
-.login-page input:focus {
+.login-page input:focus,
+.reg-page input:focus {
     outline: none;
+}
+
+.reg-page li {
+    list-style: square;
+    text-align: left;
+}
+
+.helptext {
+    margin-top: 10px;
 }
 
 .btn {

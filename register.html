@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Blog</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-wrap">
+                    <a href="index.html"><img class="logo" src="assets/logo.jpg" alt="Лого сайта"></a>
+                </div>
+                <h1 class="site-title"><a href="index.html">Chips Blog</a></h1>
+                <div class="menu-button">
+                    <div class="pixel pixel-1"></div>
+                    <div class="pixel pixel-2"></div>
+                    <div class="pixel pixel-3"></div>
+                    <div class="pixel pixel-4"></div>
+                    <div class="pixel pixel-5"></div>
+                    <div class="pixel pixel-6"></div>
+                    <div class="pixel pixel-7"></div>
+                    <div class="pixel pixel-8"></div>
+                    <div class="pixel pixel-9"></div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Категории</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content reg-page">
+        <div class="container">
+
+
+            <h2>Регистрация</h2>
+
+            <form method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="1XRat70ITxdOQWqbF4KIPl47VRqnHxvjHulShTgamXhmHjSnziSV4Ak4prqg4qdA">
+                <p><label for="id_username">Имя пользователя:</label> <input type="text" name="username" maxlength="150"
+                        autofocus="" class="form-control" required="" id="id_username">
+                    <span class="helptext">Обязательное поле. Не более 150 символов. Только буквы, цифры и символы
+                        @/./+/-/_.</span></p>
+                <p><label for="id_first_name">First name:</label> <input type="text" name="first_name"
+                        class="form-control" maxlength="100" required="" id="id_first_name"></p>
+                <p><label for="id_last_name">Last name:</label> <input type="text" name="last_name" class="form-control"
+                        maxlength="100" required="" id="id_last_name"></p>
+                <p><label for="id_email">Email:</label> <input type="email" name="email" class="form-control"
+                        required="" id="id_email"></p>
+                <p><label for="id_password1">Пароль:</label> <input type="password" name="password1"
+                        autocomplete="new-password" class="form-control" required="" id="id_password1"
+                        aria-autocomplete="list">
+                    <span class="helptext"></span></p>
+                <ul>
+                    <li>Пароль не должен быть слишком похож на другую вашу личную информацию.</li>
+                    <li>Ваш пароль должен содержать как минимум 8 символов.</li>
+                    <li>Такой пароль часто используется.</li>
+                    <li>Пароль не может состоять только из цифр.</li>
+                </ul>
+                <p></p>
+                <p><label for="id_password2">Подтверждение пароля:</label> <input type="password" name="password2"
+                        autocomplete="new-password" class="form-control" required="" id="id_password2">
+                    <span class="helptext">Для подтверждения введите, пожалуйста, пароль ещё раз.</span></p>
+                <button class="btn btn-success">Отправить) </button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="copyright">&copy; Chips Blog. Владимир Карташов. 2021</div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
